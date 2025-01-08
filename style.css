@@ -1,0 +1,211 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root {
+    --white: #FFFFFF;
+    --lt-gray: #a0a0a0;
+    --dk-gray: #747171;
+    --dk-purple: #5d29a2;
+    --med-purple: #AD54F5;
+    --lt-purple: #CCB7FF;
+    --black: black;
+    --font-title: "Bebas Neue", sans-serif;
+    --font-reg: "Libre Franklin", sans-serif;
+ }
+ 
+ 
+ /* FONTS */
+ 
+ 
+ .bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .libre-franklin-uniquifier {
+    font-family: "Libre Franklin", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+ 
+ 
+ header, body, footer {
+    width: 1000px;
+    margin: 0 auto;
+ }
+ 
+ 
+ /* HEADER SECTION */
+ 
+ header {
+        background-color:var(--black);
+        background-image: radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+        radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+        radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px), radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+        background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+        background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+        display: block;
+ }
+ 
+ header img {
+    background-color: var(--dk-gray);
+    padding: 0;
+    border-radius: 50px;
+    margin: 2rem 0 0 2rem;
+ }
+ h1 {
+    color: var(--white);
+    font-family: var(--font-title);
+    font-size: 60pt;
+    display: flex;
+    justify-content: center;
+    margin-top: -5rem;
+    margin-bottom: 0;
+ }
+
+ nav ul {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 2rem;
+    justify-content: center;
+    gap: 2rem;
+ }
+
+
+ ul li a{
+    background-color: var(--dk-purple);
+    color: var(--white);
+    border: 2px solid var(--white);
+    padding: 1rem;
+    text-align: center;
+    font-family: var(--font-reg);
+    text-decoration: none;
+    border-radius: 10px;
+ }
+
+ nav li a:hover {
+    background-color: var(--black);
+    color: var(--white);
+    border: 2px solid var(--white);
+ }
+
+ /* BODY SECTION*/
+ 
+ body {
+    background-color: var(--lt-gray);
+ }
+
+ h2, p {
+    color: var(--black);
+    line-height: 1.5rem;
+ }
+
+ h2 {
+   padding: 1rem;
+   background: var(--dk-gray);
+   border-radius: 10px;
+   margin-bottom: 0;
+ }
+
+ p {
+   margin-top: 0;
+ }
+
+ #container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+
+ #text {
+    flex: 1;
+    margin-right: 20px;
+ }
+
+ #video iframe {
+    flex: 1;
+    margin-top: 3.25rem;
+    margin-right: 2rem;
+    border-radius: 10px;
+ }
+
+ h2 {
+    font-family: var(--font-title);
+    font-size: 22pt;
+    text-align: center;
+    margin-top: 6rem;
+ }
+
+p {
+    font-family: var(--font-reg);
+    margin: 2rem;
+ }
+
+ /* FOOTER  */
+
+ footer {
+    background-color:var(--black);
+        background-image: radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+        radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+        radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px), radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+        background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+        background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+        margin-top: 7rem;
+ }
+ 
+footer p {
+    display: block;
+    color: var(--white);
+    text-align: center;
+    font-family: var(--font-reg);
+    padding: 1rem;
+    margin-bottom: 0;
+ }
+
